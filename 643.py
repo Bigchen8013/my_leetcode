@@ -10,6 +10,9 @@
 解释:最大平均数 (12-5-6+50)/4 = 51/4 = 12.75
 '''
 
+from typing import List
+import math
+
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
         # step1：定义维护的变量
@@ -33,6 +36,6 @@ class Solution:
 if __name__ == '__main__':
     nums = [1,12,-5,-6,50,3]
     k = 4
-
-    result = Solution(nums)
-    print(reversed)
+    solution = Solution()
+    result = solution.findMaxAverage(nums, k)
+    print(result)
