@@ -25,7 +25,7 @@ class Solution:
 
             # step4: 更新窗口同时更新维护的变量
             if end >= k-1:
-                sum -= sum - nums[start]
+                sum -= nums[start]
                 start += 1
         # step5： 返回最后的结果
         return max_average
