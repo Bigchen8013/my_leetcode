@@ -34,9 +34,12 @@ if __name__ == '__main__':
 
     solution = Solution()
 
-    s1 = "ab" 
+    # s1 = "ab" 
     # s2 = "eidbaooo"
-    s2 = 'eidboaoo'
+    # s2 = 'eidboaoo'
+
+    s1 = "abcdxabcde"
+    s2 = "abcdeabcdx"
 
     result = solution.checkInclusion(s1, s2)
 
