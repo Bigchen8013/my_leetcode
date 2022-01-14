@@ -20,8 +20,8 @@ class Solution:
 
              if hashmap_s1 == hashmap_s2:
                  return True
-            
-             if end >= len(hashmap_s1) - 1:
+            #  不能使用hashmap_s1的长度,哈希表不含有重复元素,所以是错的
+             if end >= len(s1) - 1:
                  head = s2[start]
                  hashmap_s2[head] -= 1
 
