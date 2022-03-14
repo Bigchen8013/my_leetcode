@@ -1,10 +1,6 @@
+import requests
 
-
-ss = 'abc'
-
-print(ord(ss[1]))
-# print(int(ss[0]),int(ss[1]),int(ss[2]))
-
-for i in range(5):
-    j = i+1
-    
+limit = 3
+name = 'In the Name Of '
+entity_ids = requests.get('https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&limit=' + str(limit) + '&search='+name).json()
+print(entity_ids)
